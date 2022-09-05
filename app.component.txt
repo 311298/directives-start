@@ -1,0 +1,10 @@
+section 7: directive deep dive
+
+=========================================================================
+
+94.
+we create the directive file with its own folder and will use the @Directive decorator, with special/unique selector.
+to let the directive know which element we are access to instantiate we provide the variable with ElementRef type, and access it inside the ngoninit.
+now we can use it as a attribute inside the html tag.
+
+95.
