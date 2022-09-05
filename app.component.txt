@@ -34,4 +34,7 @@ read about the behind the scenes of structural directive of *ngIf
 as ng-template itself does not render.
 
 100.
+for custom structural directive made an folder named unless.
 
+101.
+ngSwitch same as other switch methods in other language used in AppComponent template

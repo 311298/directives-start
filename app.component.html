@@ -14,6 +14,24 @@
       <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">
         style me with betterHighlight directive
       </p>
+      <div class="container">
+        <div *appUnless="variableForCustomStructuralDirective">
+          I can see the custom structural directive working
+        </div>
+        <button
+          class="btn btn-danger"
+          style="margin-top: 12px"
+          (click)="onClick()"
+        >
+          click
+        </button>
+      </div>
+      <div [ngSwitch]="valueForNgSwitch">
+        <p *ngSwitchCase="5">value is 5</p>
+        <p *ngSwitchCase="10">value is 10</p>
+        <p *ngSwitchCase="15">value is 15</p>
+        <p *ngSwitchDefault>value is default</p>
+      </div>
     </div>
   </div>
 </div>
