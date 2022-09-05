@@ -10,5 +10,6 @@ export class BasicHighlightDirective implements OnInit {
   ngOnInit(): void {
     this.elementRef.nativeElement.style.backgroundColor = "green";
     this.elementRef.nativeElement.style.color = "white";
+    // while it works perfectly, it is not correct way to change the dom properties
   }
 }

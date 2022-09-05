@@ -8,3 +8,30 @@ to let the directive know which element we are access to instantiate we provide 
 now we can use it as a attribute inside the html tag.
 
 95.
+better approach is the use of renderer as some times we do not have the access accross the application and in order to avoid that we use the renderer.
+this.renderer.setStyle(
+      this.elementRef.nativeElement,
+      "backgroundColor",
+      "blue"
+    );
+we can add the fourth parameter also; see the documentation for that.
+
+96.
+we can use the hostlistener to make the code more dynamic.
+be careful of spelling as everything inside the string need to be correct if not ; will not work properly.
+
+97.
+we can do the same work as hostlistener using the renderer, by @hosbinding, code is provided inside the betterhighlight.directive.ts file ( commented ).
+
+98.
+while using the custom binding property of directive to change the background color.
+first, need to import the @input and assign the variable some color and replace those variable inside hostlistener.
+to take input from AppComponent template -> [variableName from @input]="'color'"
+
+99.
+read about the behind the scenes of structural directive of *ngIf
+<ng-template [ngIf]="expression"></ng-template>
+as ng-template itself does not render.
+
+100.
+
